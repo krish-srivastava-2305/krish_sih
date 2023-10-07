@@ -36,3 +36,16 @@ button.addEventListener("mouseleave",function(){
         color:"black"
     })
 })
+
+let tl = gsap.timeline()
+tl
+  .from(".nav",{
+    opacity:0,
+    y:300,
+    duration:1
+  })
+  .from(".main",{
+    opacity:0,
+    y:300,
+    duration:1
+  })

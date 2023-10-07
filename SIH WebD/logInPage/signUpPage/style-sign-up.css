@@ -48,45 +48,50 @@ html,body{
     color: #000000;
 }
 .main{
+    height:100%;
+    width: 100%;
+    display: flex;
+}
+input{
+    border-radius: 2px;
+    border :none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    padding: 0.4vw;
+}
+form{
+    margin-top:2.8vw;
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    column-gap:3vw;
 }
-.box{
-    width: 40%;
+form .first,form .second,form .third{
+    
+    width: 50%;
     height: 80%;
-    background-color: #7e7e7e88;
-    border-radius: 26px;
     padding: 2vw;
-}
-.box{
+    /* margin-left:2vw; */
+    margin-top: 2vw ;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:0.6vw;
+    flex-wrap: wrap;
+    background-color: #7e7e7e88;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.box h1{
-    text-align: center;
-}
-.box form{
-    margin: 2vw 3vw;
-    padding:20px
-}
-.box form .label-id,.box form .label-Password{
-    margin-bottom: 2vw;
-    font-size: 1.5vw;
-}
-
-#id,#password{
-    height: 10%;
-    margin: 2vw 0.21vw;
-    background-color: transparent;
-    border: none;
-    color: aliceblue;
-    width: 100%;
-    border-bottom: 1px solid black;
-}
-#id::placeholder {
-    color: rgba(255, 255, 255, 0.664);
+/* form .third{
+    height: 30%;
+    background-color: #7e7e7e88;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+} */
+button{
+    cursor:pointer;
 }
 .submit{
     display: flex;
@@ -94,16 +99,6 @@ html,body{
     align-items: center;
     width: 100%;
     height: 20%;
-}
-.sign-up{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.sign-up a{
-    text-decoration: none;
-    margin-bottom: 5px;
 }
 .submit button{
     text-align: center;
@@ -167,11 +162,3 @@ html,body{
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   }
-
-  input{
-    border-radius: 2px;
-    border :none;
-    border-bottom: 1px solid black;
-    background-color: transparent;
-    padding: 0.4vw;
-}
